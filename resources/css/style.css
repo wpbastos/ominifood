@@ -1,0 +1,135 @@
+/*
+Green color: #66BB6A
+Active color: #43A047
+*/
+
+/*****************************/
+/*       BASIC SETUP         */
+/*****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/*****************************/
+/*   REUSABLE COMPONENTS     */
+/*****************************/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+h1 {
+  color: #ffffff;
+  font-size: 250%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/* BUTTONS */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 250px;
+  transition: background-color .3s, border .3s, color .3s;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #66BB6A;
+  border: 1px solid #66BB6A;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.btn-tranparency:link,
+.btn-tranparency:visited {
+  border: 1px solid #66BB6A;
+  color: #66BB6A;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #43A047;
+}
+
+.btn-primary:hover,
+.btn-primarytn:active {
+  border: 1px solid #43A047;
+}
+
+.btn-tranparency:hover,
+.btn-tranparency:active {
+  border: 1px solid #43A047;
+  color: #ffffff;
+}
+
+/*****************************/
+/*         HEADER            */
+/*****************************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header-text-box {
+  text-align: right;
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #43A047;
+}
